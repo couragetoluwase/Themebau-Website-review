@@ -1,0 +1,15 @@
+//FLEX & GRID
+@mixin flex($flex-direction){ 
+    display:flex;
+    flex-direction: $flex-direction;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin grid($grid-column){
+    display: grid;
+    grid-template-columns: $grid-column;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}

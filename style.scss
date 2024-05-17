@@ -1,0 +1,43 @@
+@import './SASS/variable';
+@import './SASS/utencils';
+@import './SASS/animation';
+body{
+    font-size: map-get($font-size, bigger);
+    font-weight: map-get($font-weight, medium);
+    font-family: map-get($font-family, secondary-font);
+    min-width: map-get($screen-sizes, laptop);
+    nav{
+        @include flex(row);
+        justify-content: space-between;
+        background-color: #000000;
+        padding: 0 10%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ul{
+            @include flex(row);
+            list-style: none;
+            li{
+                padding: 20px 10px;
+                &:hover .dropdown-nav-home{
+                    visibility: visible;
+                }
+                .dropdown-nav-home{
+                    position: absolute;
+                    margin: 0 auto;
+                    width: 80vw;
+                    background-color: aqua;
+                    @include grid(repeat(5, 1fr));
+                    .each-links{
+                        background-color: aquamarine;
+                    }
+                    visibility: hidden;
+                }
+            }
+        }
+        button{
+            padding: 10px 30px;
+        }
+    }
+}
