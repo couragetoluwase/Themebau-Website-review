@@ -10,6 +10,8 @@ body {
   font-weight: 500;
   font-family: "Poppins";
   min-width: 1025px;
+  background-color: #000000;
+  color: white;
 }
 body nav {
   display: flex;
@@ -17,8 +19,8 @@ body nav {
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  background-color: #000000;
   padding: 0 10%;
+  background-color: #000000;
 }
 body nav a {
   text-decoration: none;
@@ -55,7 +57,8 @@ body nav ul li .dropdown-nav-home {
   visibility: hidden;
 }
 body nav button {
-  padding: 15px 20px;
+  padding: 15px 40px;
+  margin: 10px 0;
   background-color: white;
   border: none;
   display: flex;
@@ -63,6 +66,7 @@ body nav button {
   align-items: center;
   align-content: center;
   gap: 20px;
+  font-size: 18px;
 }
 body nav button:hover .material-symbols-outlined {
   animation: btnAnimation 0.35s infinite alternate;
@@ -79,4 +83,25 @@ body nav button .material-symbols-outlined {
   font-size: 8px;
   background-color: #000000;
   border-radius: 50px;
+}
+body header {
+  text-align: center;
+}
+body header .circle {
+  background-color: grey;
+  width: 450px;
+  height: 450px;
+  border-radius: 400px;
+  position: absolute;
+  top: -8rem;
+  left: 12vw;
+  z-index: -100;
+}
+body header h1 {
+  margin-top: 6rem;
+  font-size: 100px;
+  font-weight: 400;
+}
+body header p {
+  padding: 2px 25%;
 }/*# sourceMappingURL=style.css.map */
