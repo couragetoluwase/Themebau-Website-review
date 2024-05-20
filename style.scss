@@ -31,7 +31,8 @@ body{
                 }
                 .dropdown-nav-home{
                     position: absolute;
-                    left: -20rem;
+                    // left: 0;
+                    transform: translateX();
                     background-color: aqua;
                     @include grid(repeat(5, 1fr));
                     // .each-links{
@@ -58,5 +59,4 @@ body{
             }
         }
     }
-
 }

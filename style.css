@@ -44,7 +44,7 @@ body nav ul li:hover .dropdown-nav-home {
 }
 body nav ul li .dropdown-nav-home {
   position: absolute;
-  left: -20rem;
+  transform: translateX();
   background-color: aqua;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
