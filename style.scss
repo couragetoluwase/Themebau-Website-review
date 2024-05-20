@@ -18,26 +18,45 @@ body{
         ul{
             @include flex(row);
             list-style: none;
+            position: relative;
+            
             li{
+                a{
+                padding:20px 5px;
+                }
                 padding: 20px 10px;
+                position: relative;
                 &:hover .dropdown-nav-home{
                     visibility: visible;
                 }
                 .dropdown-nav-home{
                     position: absolute;
-                    margin: 0 auto;
-                    width: 80vw;
+                    left: -20rem;
                     background-color: aqua;
                     @include grid(repeat(5, 1fr));
-                    .each-links{
-                        background-color: aquamarine;
-                    }
+                    // .each-links{
+                    //     background-color: aquamarine;
+                    // }
+                    width: 100vw;
                     visibility: hidden;
                 }
             }
         }
         button{
-            padding: 10px 30px;
+            padding: 15px 20px;
+            background-color: white;
+            border: none;
+            @include flex(row);
+            gap: 20px;
+            &:hover .material-symbols-outlined{
+                @include btnAnimation;
+            }
+            .material-symbols-outlined{
+                font-size: 8px;
+                background-color: #000000;
+                border-radius: 50px;
+            }
         }
     }
+
 }

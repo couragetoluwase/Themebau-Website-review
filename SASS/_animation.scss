@@ -1,0 +1,18 @@
+@mixin btnAnimation{
+    @keyframes btnAnimation{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform:translateY(-15px);
+        }
+    }
+    animation: btnAnimation 0.35s infinite alternate;
+}
+@mixin navAnimation{
+    @keyframes navAnimation{
+        from{
+            transform: translateX(0vw);
+        }
+    }
+}

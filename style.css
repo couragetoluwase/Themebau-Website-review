@@ -30,28 +30,53 @@ body nav ul {
   align-items: center;
   align-content: center;
   list-style: none;
+  position: relative;
 }
 body nav ul li {
   padding: 20px 10px;
+  position: relative;
+}
+body nav ul li a {
+  padding: 20px 5px;
 }
 body nav ul li:hover .dropdown-nav-home {
   visibility: visible;
 }
 body nav ul li .dropdown-nav-home {
   position: absolute;
-  margin: 0 auto;
-  width: 80vw;
+  left: -20rem;
   background-color: aqua;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   align-items: center;
   align-content: center;
+  width: 100vw;
   visibility: hidden;
 }
-body nav ul li .dropdown-nav-home .each-links {
-  background-color: aquamarine;
-}
 body nav button {
-  padding: 10px 30px;
+  padding: 15px 20px;
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+body nav button:hover .material-symbols-outlined {
+  animation: btnAnimation 0.35s infinite alternate;
+}
+@keyframes btnAnimation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+body nav button .material-symbols-outlined {
+  font-size: 8px;
+  background-color: #000000;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
