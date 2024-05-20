@@ -117,4 +117,7 @@ body main {
 body main .templatesDesign {
   background-color: red;
   text-align: center;
+}
+body main .templatesDesign p {
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */
