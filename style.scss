@@ -84,7 +84,7 @@ body{
                             top: 10px;
                             list-style: none;
                             @include flex(column);
-                            width: 150px;
+                            width: 200px;
                             background-color: black;
                             visibility: hidden;
                             li{
@@ -95,6 +95,12 @@ body{
                             }
                         }
                     }
+                }
+                .pages-dropdown{
+                    @extend .products-dropdown;
+                }
+                .contacts-dropdown{
+                    @extend .products-dropdown;
                 }
             }
         }

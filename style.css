@@ -43,7 +43,7 @@ body nav ul li {
 body nav ul li a {
   padding: 10px 5px;
 }
-body nav ul li:hover .dropdown-nav-home, body nav ul li:hover .products-dropdown {
+body nav ul li:hover .dropdown-nav-home, body nav ul li:hover .products-dropdown, body nav ul li:hover .contacts-dropdown, body nav ul li:hover .pages-dropdown {
   visibility: visible;
 }
 body nav ul li .dropdown-nav-home {
@@ -58,7 +58,7 @@ body nav ul li .dropdown-nav-home {
   width: 100vw;
   visibility: hidden;
 }
-body nav ul li .products-dropdown {
+body nav ul li .products-dropdown, body nav ul li .contacts-dropdown, body nav ul li .pages-dropdown {
   position: absolute;
   left: -10px;
   font-size: 16px;
@@ -74,14 +74,14 @@ body nav ul li .products-dropdown {
   align-content: start;
   visibility: hidden;
 }
-body nav ul li .products-dropdown a {
+body nav ul li .products-dropdown a, body nav ul li .contacts-dropdown a, body nav ul li .pages-dropdown a {
   margin: 0;
   padding: 0;
 }
-body nav ul li .products-dropdown a:hover {
+body nav ul li .products-dropdown a:hover, body nav ul li .contacts-dropdown a:hover, body nav ul li .pages-dropdown a:hover {
   color: green;
 }
-body nav ul li .products-dropdown li {
+body nav ul li .products-dropdown li, body nav ul li .contacts-dropdown li, body nav ul li .pages-dropdown li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -91,13 +91,13 @@ body nav ul li .products-dropdown li {
   padding: 5px 20px;
   width: 100%;
 }
-body nav ul li .products-dropdown li:hover .products-mini-dropdown {
+body nav ul li .products-dropdown li:hover .products-mini-dropdown, body nav ul li .contacts-dropdown li:hover .products-mini-dropdown, body nav ul li .pages-dropdown li:hover .products-mini-dropdown {
   visibility: visible;
 }
-body nav ul li .products-dropdown li:hover {
+body nav ul li .products-dropdown li:hover, body nav ul li .contacts-dropdown li:hover, body nav ul li .pages-dropdown li:hover {
   color: wheat;
 }
-body nav ul li .products-dropdown li .products-mini-dropdown {
+body nav ul li .products-dropdown li .products-mini-dropdown, body nav ul li .contacts-dropdown li .products-mini-dropdown, body nav ul li .pages-dropdown li .products-mini-dropdown {
   position: absolute;
   left: 200px;
   top: 10px;
@@ -106,14 +106,14 @@ body nav ul li .products-dropdown li .products-mini-dropdown {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  width: 150px;
+  width: 200px;
   background-color: black;
   visibility: hidden;
 }
-body nav ul li .products-dropdown li .products-mini-dropdown li {
+body nav ul li .products-dropdown li .products-mini-dropdown li, body nav ul li .contacts-dropdown li .products-mini-dropdown li, body nav ul li .pages-dropdown li .products-mini-dropdown li {
   padding: 0 5px 5px 50px;
 }
-body nav ul li .products-dropdown li .products-mini-dropdown li:hover {
+body nav ul li .products-dropdown li .products-mini-dropdown li:hover, body nav ul li .contacts-dropdown li .products-mini-dropdown li:hover, body nav ul li .pages-dropdown li .products-mini-dropdown li:hover {
   color: wheat;
 }
 body nav button {
