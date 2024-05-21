@@ -111,12 +111,12 @@ body nav ul li .products-dropdown li .products-mini-dropdown, body nav ul li .co
   visibility: hidden;
 }
 body nav ul li .products-dropdown li .products-mini-dropdown li, body nav ul li .contacts-dropdown li .products-mini-dropdown li, body nav ul li .pages-dropdown li .products-mini-dropdown li {
-  padding: 0 5px 5px 50px;
+  padding: 0px 5px 5px 50px;
 }
 body nav ul li .products-dropdown li .products-mini-dropdown li:hover, body nav ul li .contacts-dropdown li .products-mini-dropdown li:hover, body nav ul li .pages-dropdown li .products-mini-dropdown li:hover {
   color: wheat;
 }
-body nav button {
+body nav .dot-buttons {
   padding: 15px 40px;
   margin: 10px 0;
   background-color: white;
@@ -128,7 +128,7 @@ body nav button {
   gap: 20px;
   font-size: 18px;
 }
-body nav button:hover .material-symbols-outlined {
+body nav .dot-buttons:hover .material-symbols-outlined {
   animation: btnAnimation 0.35s infinite alternate;
 }
 @keyframes btnAnimation {
@@ -139,7 +139,7 @@ body nav button:hover .material-symbols-outlined {
     transform: translateY(-15px);
   }
 }
-body nav button .material-symbols-outlined {
+body nav .dot-buttons .material-symbols-outlined {
   font-size: 8px;
   background-color: #000000;
   border-radius: 50px;
@@ -196,4 +196,118 @@ body main .templatesDesign img {
 }
 body main .templatesDesign p {
   margin: 2rem 0;
+}
+body .section-white-bg {
+  background-color: white;
+  color: #000000;
+  padding: 7rem 10%;
+  align-items: start;
+}
+body .section-white-bg .img-text-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  align-items: start;
+}
+body .section-white-bg .img-text-section .div-images {
+  width: 100%;
+}
+body .section-white-bg .img-text-section .div-images img {
+  width: 70%;
+}
+body .section-white-bg .img-text-section .div-images img:nth-child(2) {
+  transform: translate(30%, -70px);
+}
+body .section-white-bg .img-text-section .div-text {
+  width: 100%;
+}
+body .section-white-bg .img-text-section .div-text h3 {
+  font-weight: 600;
+  font-size: 35px;
+  padding: 2rem 30% 2rem 0;
+}
+body .section-white-bg .img-text-section .div-text p {
+  margin-left: 15%;
+  padding: 10px 20px 10px 0;
+}
+body .section-white-bg .img-text-section .div-text button {
+  margin: 2rem 15%;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #000000;
+  border: none;
+}
+body .section-white-bg .img-text-section .div-text button:hover .material-symbols-outlined {
+  animation: btnAnimation 0.35s infinite alternate;
+}
+@keyframes btnAnimation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+body .section-white-bg .img-text-section .div-text button .material-symbols-outlined {
+  font-size: 8px;
+  background-color: white;
+  color: white;
+  border-radius: 50px;
+}
+body .section-white-bg .templates-more {
+  text-align: center;
+}
+body .section-white-bg .templates-more div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+body .section-white-bg .templates-more div img {
+  width: 100%;
+  border: 1px solid #afaaaa;
+  border-radius: 5px;
+}
+body .section-white-bg .templates-more p {
+  margin: 2rem 0 0 0;
+  font-weight: 600;
+}
+body .project-showcase {
+  padding: 5rem 0;
+}
+body .project-showcase h3 {
+  padding: 0 10% 0 10%;
+  margin-bottom: 5rem;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+}
+body .project-showcase div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+body .project-showcase div img {
+  width: 350px;
+}
+body .project-showcase div .image-500px {
+  width: 500px;
+}
+body .project-showcase div .translate1 {
+  margin-left: 10vw;
+}
+body .project-showcase div .translate2 {
+  margin-right: 10vw;
 }/*# sourceMappingURL=style.css.map */

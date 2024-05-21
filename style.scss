@@ -88,7 +88,7 @@ body{
                             background-color: black;
                             visibility: hidden;
                             li{
-                                padding:0 5px 5px 50px;
+                                padding:0px 5px 5px 50px;
                                 &:hover{
                                     color: wheat;
                                 }
@@ -104,7 +104,7 @@ body{
                 }
             }
         }
-        button{
+        .dot-buttons{
             padding: 15px 40px;
             margin: 10px 0;
             background-color: white;
@@ -166,5 +166,103 @@ body{
         }
     }
 
-    // 
+    // Present your work in a unique way 💪(Section)
+    .section-white-bg{
+        background-color: #ffff;
+        color:#000000;
+        padding:7rem 10%;
+        align-items: start;
+        .img-text-section{
+            @include flex(row);
+            align-items: start;
+            .div-images{
+                width: 100%;
+                img{
+                    width: 70%;
+                    &:nth-child(2){
+                        transform: translate(30%, -70px);
+                    }
+                }
+            }
+            .div-text {
+                width: 100%;
+                h3{
+                    font-weight: 600;
+                    font-size: 35px;
+                    padding: 2rem 30% 2rem 0 ;
+                }
+                p{
+                    margin-left: 15%;
+                    padding: 10px 20px 10px 0;
+                }
+                button {
+                    margin: 2rem 15%;
+                    padding: 15px 30px;
+                    @include flex(row);
+                    gap: 30px;
+                    font-size: 18px;
+                    color: white;
+                    background-color: #000000;
+                    border: none;
+                    &:hover .material-symbols-outlined{
+                        @include btnAnimation;
+                    }
+                    .material-symbols-outlined{
+                        font-size: 8px;
+                        background-color: white;
+                        color: white;
+                        border-radius: 50px;
+                    }
+
+                }
+            }
+        }
+        .templates-more{
+            text-align: center;
+            div{
+                @include flex(row);
+                gap: 30px;
+                img{
+                    width: 100%;
+                    border: 1px solid #afaaaa;
+                    border-radius: 5px;
+                }
+
+            }
+            p {
+                margin: 2rem 0 0 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    // project-showcase
+    .project-showcase{ 
+        padding: 5rem 0;
+        h3 {
+            padding: 0 10% 0 10%;
+            margin-bottom: 5rem;
+            font-size: 45px;
+            font-weight: 400;
+            text-align: center;
+        }
+        div{
+            @include flex(row);
+            gap: 40px;
+            overflow: scroll;
+            scrollbar-width: none;
+            img{
+                width: 350px;
+            }
+            .image-500px{
+                width: 500px;
+            }
+            .translate1{
+                margin-left: 10vw;
+            }
+            .translate2{
+                margin-right: 10vw;
+            }
+        }
+    }
 }
