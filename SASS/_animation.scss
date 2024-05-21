@@ -9,10 +9,15 @@
     }
     animation: btnAnimation 0.35s infinite alternate;
 }
-@mixin navAnimation{
-    @keyframes navAnimation{
+
+@mixin mainAnimation{
+    @keyframes mainAnimation{
         from{
-            transform: translateX(0vw);
+            transform: translateY(-1px);
+        }
+        to{
+            transform: translateY(-15px);
         }
     }
+    animation: mainAnimation 0.3s ease both alternate;
 }

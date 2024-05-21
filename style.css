@@ -7,7 +7,6 @@
 
 body {
   font-size: 1.2rem;
-  font-weight: 500;
   font-family: "Poppins";
   min-width: 1025px;
   background-color: #000000;
@@ -21,6 +20,9 @@ body nav {
   justify-content: space-between;
   padding: 0 10%;
   background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000000000;
 }
 body nav a {
   text-decoration: none;
@@ -35,13 +37,13 @@ body nav ul {
   position: relative;
 }
 body nav ul li {
-  padding: 20px 10px;
+  padding: 15px 10px;
   position: relative;
 }
 body nav ul li a {
-  padding: 20px 5px;
+  padding: 10px 5px;
 }
-body nav ul li:hover .dropdown-nav-home {
+body nav ul li:hover .dropdown-nav-home, body nav ul li:hover .products-dropdown {
   visibility: visible;
 }
 body nav ul li .dropdown-nav-home {
@@ -55,6 +57,64 @@ body nav ul li .dropdown-nav-home {
   align-content: center;
   width: 100vw;
   visibility: hidden;
+}
+body nav ul li .products-dropdown {
+  position: absolute;
+  left: -10px;
+  font-size: 16px;
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  background-color: black;
+  align-items: start;
+  align-content: start;
+  visibility: hidden;
+}
+body nav ul li .products-dropdown a {
+  margin: 0;
+  padding: 0;
+}
+body nav ul li .products-dropdown a:hover {
+  color: green;
+}
+body nav ul li .products-dropdown li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px 20px;
+  width: 100%;
+}
+body nav ul li .products-dropdown li:hover .products-mini-dropdown {
+  visibility: visible;
+}
+body nav ul li .products-dropdown li:hover {
+  color: wheat;
+}
+body nav ul li .products-dropdown li .products-mini-dropdown {
+  position: absolute;
+  left: 200px;
+  top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 150px;
+  background-color: black;
+  visibility: hidden;
+}
+body nav ul li .products-dropdown li .products-mini-dropdown li {
+  padding: 0 5px 5px 50px;
+}
+body nav ul li .products-dropdown li .products-mini-dropdown li:hover {
+  color: wheat;
 }
 body nav button {
   padding: 15px 40px;
@@ -107,17 +167,33 @@ body header p {
 }
 body main {
   padding: 0 10%;
+  margin: 5rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   align-items: center;
   align-content: center;
-  grid-template-rows: repeat(4, minmax(150px, auto));
+  gap: 30px;
 }
 body main .templatesDesign {
-  background-color: red;
   text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body main .templatesDesign:hover img {
+  animation: mainAnimation 0.3s ease both alternate;
+}
+@keyframes mainAnimation {
+  from {
+    transform: translateY(-1px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+body main .templatesDesign img {
+  width: 100%;
 }
 body main .templatesDesign p {
-  margin: 20px;
+  margin: 2rem 0;
 }/*# sourceMappingURL=style.css.map */

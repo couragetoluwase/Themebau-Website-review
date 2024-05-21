@@ -3,7 +3,6 @@
 @import './SASS/animation';
 body{
     font-size: map-get($font-size, bigger);
-    font-weight: map-get($font-weight, medium);
     font-family: map-get($font-family, secondary-font);
     min-width: map-get($screen-sizes, laptop);
     background-color: #000000;
@@ -14,7 +13,9 @@ body{
         justify-content: space-between;
         padding: 0 10%;
         background-color: #000000;
-
+        position: sticky;
+        top: 0;
+        z-index: 1000000000;
         a{
             text-decoration: none;
             color: white;
@@ -26,11 +27,12 @@ body{
             
             li{
                 a{
-                padding:20px 5px;
+                padding:10px 5px;
                 }
-                padding: 20px 10px;
+                padding: 15px 10px;
                 position: relative;
-                &:hover .dropdown-nav-home{
+                &:hover .dropdown-nav-home,
+                &:hover .products-dropdown{
                     visibility: visible;
                 }
                 .dropdown-nav-home{
@@ -44,6 +46,55 @@ body{
                     // }
                     width: 100vw;
                     visibility: hidden;
+                }
+                .products-dropdown{
+                    position: absolute;
+                    left: -10px;
+                    font-size: 16px;
+                    padding: 20px 0;
+                    list-style: none;
+                    @include flex(column);
+                    width: 200px;
+                    background-color: black;
+                    align-items: start;
+                    align-content: start;
+                    visibility: hidden;
+                    a{
+                        margin: 0;
+                        padding: 0;
+                        &:hover{
+                            color:green;
+                        }
+                    }
+                    li{
+                        @include flex(row);
+                        justify-content: space-between;
+                        margin: 0;
+                        padding: 5px 20px;
+                        width: 100%;                        
+                        &:hover .products-mini-dropdown{
+                            visibility: visible;
+                        }
+                        &:hover{
+                            color: wheat;
+                        }
+                        .products-mini-dropdown{
+                            position: absolute;
+                            left: 200px;
+                            top: 10px;
+                            list-style: none;
+                            @include flex(column);
+                            width: 150px;
+                            background-color: black;
+                            visibility: hidden;
+                            li{
+                                padding:0 5px 5px 50px;
+                                &:hover{
+                                    color: wheat;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -90,14 +141,24 @@ body{
     // Website Templates(Main)
     main{
         padding: 0 10%;
+        margin: 5rem 0;
         @include grid(repeat(3, 1fr));
-        grid-template-rows: repeat(4, minmax(150px, auto));
+        gap: 30px;
         .templatesDesign{
-            background-color: red;
             text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            &:hover img{
+                @include mainAnimation;
+            }
+            img{
+                width: 100%;
+            }
             p{
-                margin: 20px;
+                margin: 2rem 0;
             }
         }
     }
+
+    // 
 }
