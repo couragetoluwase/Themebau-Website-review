@@ -8,7 +8,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Poppins";
-  min-width: 1025px;
+  min-width: 1450px;
   background-color: #000000;
   color: white;
 }
@@ -269,7 +269,7 @@ body .section-white-bg .templates-more div {
   flex-direction: row;
   align-items: center;
   align-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 body .section-white-bg .templates-more div img {
   width: 100%;
@@ -282,6 +282,7 @@ body .section-white-bg .templates-more p {
 }
 body .project-showcase {
   padding: 5rem 0;
+  padding-bottom: 10rem;
 }
 body .project-showcase h3 {
   padding: 0 10% 0 10%;
@@ -310,4 +311,25 @@ body .project-showcase div .translate1 {
 }
 body .project-showcase div .translate2 {
   margin-right: 10vw;
+}
+body .inner-pages {
+  background-color: white;
+  color: black;
+  padding: 5rem 10%;
+}
+body .inner-pages .inner-pages-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+body .inner-pages .inner-pages-text h3 {
+  font-size: 30px;
+  width: 100%;
+  padding: 0 10%;
+  font-weight: 500;
+}
+body .inner-pages .inner-pages-text p {
+  width: 100%;
+  padding: 0 10%;
 }/*# sourceMappingURL=style.css.map */
