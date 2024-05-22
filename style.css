@@ -273,8 +273,19 @@ body .section-white-bg .templates-more div {
 }
 body .section-white-bg .templates-more div img {
   width: 100%;
-  border: 1px solid #afaaaa;
+  box-shadow: 0px 0px 10px #e3dfdf;
   border-radius: 5px;
+}
+body .section-white-bg .templates-more div img:hover {
+  animation: mainAnimation 0.3s ease both alternate;
+}
+@keyframes mainAnimation {
+  from {
+    transform: translateY(-1px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
 body .section-white-bg .templates-more p {
   margin: 2rem 0 0 0;
