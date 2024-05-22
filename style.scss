@@ -338,4 +338,36 @@ body{
             }
         }
     }
+
+    // Fully responsive and retina ready 👑(Section)
+    .fully-responsive{
+        @include flex(row);
+        background-color: #f4f4f4;
+        color:#000000;
+        padding: 5rem 10%;
+        padding-bottom: 0;
+        align-items: start;
+        .image-div{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .fully-responsive-text{
+            width: 50%;
+            padding: 5% 10%;
+            h3{
+                font-size: 35px;
+                font-weight: 500;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    // Bootstrap 4, Sass Available, etc(Section).
+    .pre-processor{
+        background-color: white;
+        color: #000000;
+        padding: 10rem 10%;
+    }
 }
