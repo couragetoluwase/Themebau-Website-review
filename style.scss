@@ -284,6 +284,25 @@ body{
                 padding: 0 10%;
             }
         }
-        
+        .inner-pages-grid{
+            margin-top: 5rem;
+            @include grid(repeat(4, 1fr));
+            gap: 30px;
+            text-align: center;
+            .grids{
+                &:hover img{
+                @include mainAnimation;
+            } 
+            img{
+                width: 100%;
+                box-shadow: 0px 0px 10px #e6e2e2c9;
+            }
+            p{
+                margin: 1rem;
+            }
+            }
+            
+            
+        }
     }
 }
