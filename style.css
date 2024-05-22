@@ -371,4 +371,43 @@ body .inner-pages .inner-pages-grid .grids img {
 }
 body .inner-pages .inner-pages-grid .grids p {
   margin: 1rem;
+}
+body .menu-styles {
+  padding: 5rem 10%;
+}
+body .menu-styles h3 {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+body .menu-styles .menu-styles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+body .menu-styles .menu-styles-grid div {
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+body .menu-styles .menu-styles-grid div:hover img {
+  animation: mainAnimation 0.3s ease both alternate;
+}
+@keyframes mainAnimation {
+  from {
+    transform: translateY(-1px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+body .menu-styles .menu-styles-grid div img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+body .menu-styles .menu-styles-grid div p {
+  margin: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

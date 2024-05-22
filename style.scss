@@ -308,4 +308,34 @@ body{
             
         }
     }
+
+    // Menu Styles(Section)
+    .menu-styles{
+        padding: 5rem 10%;
+       
+        h3{
+            font-size: 35px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .menu-styles-grid{
+            @include grid(repeat(3, 1fr));
+            gap: 30px;
+            div{
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 4rem;
+                &:hover img{
+                    @include mainAnimation;
+                }
+                img{
+                    width: 100%;
+                    border-radius: 10px 10px 0 0;
+                }
+                p{
+                    margin: 1.5rem;
+                }
+            }
+        }
+    }
 }
